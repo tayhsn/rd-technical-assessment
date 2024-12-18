@@ -10,7 +10,9 @@
     "start:backend": "cd backend && npm start",
     "dev": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  },
   "devDependencies": {
     "lerna": "^8.0.2"
   },
