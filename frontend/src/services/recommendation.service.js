@@ -38,12 +38,11 @@ const getRecommendations = (
       const bestMatch = scoredProducts[0];
       const lastMatch = tiedProducts[tiedProducts.length - 1];
 
-      if (tiedProducts) {
+      if (tiedProducts.length > 1) {
         return [lastMatch];
       }
 
       return [bestMatch];
-
     case 'MultipleProduct':
     default:
       return scoredProducts.filter((product) => product.score > 0);
